@@ -1,2 +1,67 @@
 # Project-1
-Random Quote Generator
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+</style>
+<body>
+    <header>
+        <h1>Welcome to My First Website!</h1>
+    </header>
+
+    <main>
+        <p>Hi, I'm Manish! This is my first HTML project on GitHub 😎.</p>
+
+        <button onclick="showMessage()">Click Me!</button>
+        <p id="message"></p>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ by Me</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerText = "You did it! 🎉";
+        }
+    </script>
+</body>
+</html>
